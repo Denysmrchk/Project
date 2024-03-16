@@ -1,0 +1,46 @@
+.weather_upcoming {
+  width: 100%;
+  .upcoming_list {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+    li {
+      border-radius: 10px;
+      height: 80px;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+      background-color: white;
+    }
+  }
+  .title_time {
+    padding-top: 15px;
+    min-width: 80px;
+    width: 25%;
+    margin: 10px 15px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+  }
+  .icon {
+    padding-top: 20px;
+    height: 80px;
+    width: 65px;
+    margin: 0 25px;
+    transform: scale(1.5);
+    clip-path: polygon(0 20%, 100% 20%, 100% 69.5%, 0 69.5%);
+  }
+  .temperature {
+    text-align: center;
+    width: 20%;
+    padding-top: 25px;
+    font-size: 1.5rem;
+  }
+  .humidity {
+    text-align: center;
+    width: 20%;
+    padding-top: 25px;
+    font-size: 1.5rem;
+  }
+}

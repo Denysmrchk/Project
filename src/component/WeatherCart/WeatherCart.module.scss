@@ -1,0 +1,56 @@
+.cart_weather {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.div_img {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+}
+.icon_weather {
+  clip-path: polygon(2.5% 1%, 97.5% 1%, 97.5% 99%, 2.5% 99%);
+  border-radius: 100px;
+  width: 100%;
+  position: relative;
+  max-width: 320px;
+}
+.temperature {
+  position: relative;
+  color: white;
+  bottom: 25%;
+  font-size: 2.2rem;
+  text-align: center; /* Выравнивание текста по центру */
+  display: flex;
+  flex-direction: column;
+  div {
+    font-size: 1.4rem;
+  }
+  span {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+}
+.date {
+  height: 5%;
+  position: relative;
+  margin: 15px 0px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+  justify-content: center; /* Выравнивание по горизонтали */
+  /* Выравнивание текста по центру */
+
+  display: flex;
+  flex-direction: row;
+  .time {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .day {
+    font-size: 1.4rem;
+    margin-left: 5px;
+  }
+}

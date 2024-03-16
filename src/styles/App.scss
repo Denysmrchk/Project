@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(160, 178, 201);
+}
+#root {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.page-login {
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 650px;
+  height: 350px;
+  background-color: rgb(0, 87, 128);
+
+  border-radius: 20px;
+  h1 {
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: rgb(238, 238, 238);
+    margin-left: -100px;
+  }
+}
+.login-form-block {
+  flex-direction: column;
+  display: flex;
+  font-size: 15px;
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.3px;
+
+    label {
+      padding-bottom: 5px;
+    }
+    input {
+      padding: 10px 15px;
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 10px;
+      background-color: rgb(243, 250, 255);
+    }
+    :focus {
+      outline: none;
+    }
+  }
+  .btn-login-in {
+    background-color: rgb(57, 192, 255);
+    border: 1px solid rgb(144, 214, 247);
+    height: 25px;
+    width: 100px;
+    margin: 8px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: box-shadow 0.15s ease; /* добавляем плавное переходное состояние */
+    align-self: flex-end;
+    cursor: pointer;
+  }
+}
+.list_weather {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  .list_item {
+    position: relative;
+    bottom: 25%;
+    color: white;
+    text-align: center; /* Выравнивание текста по центру */
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+  }
+}

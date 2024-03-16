@@ -1,0 +1,42 @@
+.input_block {
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  input {
+    margin-top: 20px;
+    font-size: 20px;
+    height: 40px;
+    width: 80%;
+    border-radius: 15px;
+    padding: 5px 20px;
+    border: 2px solid white;
+  }
+  :focus {
+    outline: none;
+  }
+}
+
+.popUp {
+  z-index: 2;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: calc(100% * 0.45 * 0.8 + 44px);
+  margin-top: -15px;
+  font-size: 18px;
+  border-end-end-radius: 15px;
+  border-end-start-radius: 15px;
+  .selected {
+    background-color: rgba(224, 223, 222, 0.863);
+  }
+  li {
+    padding: 10px;
+    margin-right: 40px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    list-style-type: none;
+    cursor: pointer;
+  }
+  ul li:hover {
+    background-color: rgba(224, 223, 222, 0.863);
+  }
+}

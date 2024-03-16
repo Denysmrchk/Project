@@ -1,0 +1,110 @@
+.wrapper {
+  background-color: rgb(0, 87, 128);
+
+  display: flex;
+  width: 100%;
+  font-size: 1.25rem;
+
+  .weather_now {
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+    .cart_weather {
+      max-width: 320px;
+      display: flex;
+      flex-direction: column;
+    }
+    .icon_weather {
+      margin-top: 40px;
+      clip-path: polygon(2.5% 1%, 97.5% 1%, 97.5% 99%, 2.5% 99%);
+      border-radius: 100px;
+      width: 320px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .temperature {
+      color: white;
+      font-size: 2.2rem;
+      text-align: center;
+      position: relative;
+      bottom: 25%;
+
+      div {
+        margin-top: 15px;
+        font-size: 1.4rem;
+      }
+      span {
+        width: 100%;
+      }
+    }
+  }
+  .date {
+    width: 90%;
+    position: absolute;
+    z-index: 1;
+    margin: 10px 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    .time {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .day {
+      font-size: 1.4rem;
+      margin-left: 5px;
+    }
+  }
+  .weather_upcoming {
+    width: 100%;
+    .upcoming_list {
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+
+      li {
+        border-radius: 10px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        background-color: white;
+      }
+    }
+    .title_time {
+      padding-top: 15px;
+      min-width: 80px;
+      width: 25%;
+      margin: 10px 15px;
+      font-size: 22px;
+      letter-spacing: 0.5px;
+    }
+    .icon {
+      padding-top: 20px;
+      height: 80px;
+      width: 65px;
+      margin: 0 25px;
+      transform: scale(1.5);
+      clip-path: polygon(0 20%, 100% 20%, 100% 69.5%, 0 69.5%);
+    }
+    .temperature {
+      text-align: center;
+      width: 20%;
+      padding-top: 25px;
+      font-size: 1.5rem;
+    }
+    .humidity {
+      text-align: center;
+      width: 20%;
+      padding-top: 25px;
+      font-size: 1.5rem;
+    }
+  }
+}
